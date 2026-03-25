@@ -1,0 +1,26 @@
+ 1  git clone https://github.com/wiktoriagg/jpai_kartkowka_gr4.git
+    2  cd jpai_kartkowka_gr4/
+    3  ls
+    4  mv docker Dockerfile
+    5  ls
+    6  nano Dockerfile
+    7  nano app.js
+    8  nano package.json
+    9  nano Dockerfile
+   10  docker built -t test:v2
+   11  docker build -t test:v2
+   12  docker --help
+   13  docker build -t test:v2
+   14  ls
+   15  nano Dockerfile
+   16  docker build -t test:v2
+   17  docker image
+   18  docker images
+   19  docker build -t test:v2
+   20  docker build -t test:v2 .
+   21  docker run -d -p 4532:3000 --name apka test:v2
+   22  curl -f http://localhost:4532/
+   23  docker stop apka
+   24  docker rm -f apka
+   25  docker image rm test:v2
+   26  history | tee docker.log
